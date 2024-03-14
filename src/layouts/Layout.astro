@@ -1,0 +1,35 @@
+---
+
+const { title } = Astro.props;
+
+const items = [{
+  icon: '',
+  name: 'opcion 1',
+},
+{
+  icon: '',
+  name: 'opcion 2',
+},
+{
+  icon: '',
+  name: 'opcion 3',
+}
+]
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+
+    <slot />
+
+	</body>
+</html>
